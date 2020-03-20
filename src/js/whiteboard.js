@@ -147,6 +147,7 @@ function lineTo(e, forceSend = false){
     
     if(_currentState.Moves.length >= 20 || forceSend){            
         var boardUpdate = _currentState;
+        boardUpdate.UpdateType = forceSend ? 1 : 0;
         sendUpdateToServer(boardUpdate);
         _currentState = createNewState();
     }
