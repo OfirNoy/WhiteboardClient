@@ -31,6 +31,7 @@ let wb = require('../js/whiteboard.js');
 
 const BOARD_SELECTOR_ID = 'selector';
 const BOARD_CANVAS = "board-canvas";
+const WHITEBOARD_SERVICE_URL = "http://localhost:5000/board";
 
 export default {
   name: 'Whiteboard',
@@ -80,7 +81,7 @@ export default {
   },
   mounted: function () {      
     var canvas = document.getElementById(BOARD_CANVAS);
-    wb.initWhiteboard("http://localhost:5000/board", this.onNewBoard , canvas);
+    wb.initWhiteboard(WHITEBOARD_SERVICE_URL, this.onNewBoard , canvas);
 
     var select = document.getElementById(BOARD_SELECTOR_ID);    
     var option = document.createElement('option');
