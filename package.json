@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.4",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.1",
     "signalr": "^2.4.1",
     "vue": "^2.6.11",
     "vue-color": "^2.7.1"
